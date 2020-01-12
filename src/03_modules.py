@@ -20,6 +20,7 @@ print(sys.platform)
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
+
 print(sys.version)
 
 import os
@@ -37,4 +38,5 @@ print("Directory: " + str(os.getcwd()))
 
 # Print out your machine's login name
 # YOUR CODE HERE
+
 print("Login " + os.getlogin())
