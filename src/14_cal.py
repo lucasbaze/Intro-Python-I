@@ -22,3 +22,24 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+def calendarView():
+  monthInput = input('Please press enter for the current calendar or enter a month and year: ').split(" ")
+  # monthInput = theInput.split(" ")
+
+  if len(monthInput) > 2:
+    print("Please add only 2 form fields")
+    return
+  elif monthInput[0] == "": 
+    m = datetime.today().month
+    y = datetime.today().year
+  elif len(monthInput) == 1:
+    m = monthInput[0]
+    y = datetime.today().year
+  elif len(monthInput) == 2:
+    m = monthInput[0]
+    y = monthInput[1]
+  
+  print(calendar.month(int(y), int(m)))
+
+calendarView()
