@@ -20,8 +20,11 @@ print(f.closed)
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-with open('bar.txt', 'r') as f:
-	read_data = f.read()
-	print(read_data)
+with open('bar.txt', 'w') as f:
+	f.write("Some arbitratry length of information \n is included in this file \n and I'm proud of it!")
+
+with open('bar.txt', 'r') as f1:
+	print(f1.read())
 
 print(f.closed)
+
